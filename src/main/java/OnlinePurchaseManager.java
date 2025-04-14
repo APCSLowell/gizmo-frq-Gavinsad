@@ -14,7 +14,7 @@ public class OnlinePurchaseManager
     purchases = new ArrayList<Gizmo>();
     int x=0;
     for(int i=0;i<purchases.size();i++){
-if(purchases.get(i).getMaker().equals(maker)&&purchases.get(i).isElectronic()==true){x++;}
+if(purchases.get(i).getMaker().equals(maker)&&purchases.get(i).isElectronic()){x++;}
 
     }
     return x;
@@ -29,7 +29,7 @@ if(purchases.get(i).getMaker().equals(maker)&&purchases.get(i).isElectronic()==t
     int x=0;
     for(int i=1;i<purchases.size();i++){
 if(purchases.get(x).getMaker().equals(purchases.get(i).getMaker())){
-if(purchases.get(x).isElectronic()==purchases.get(i).isElectronic()){return true;}
+if(purchases.get(x).isElectronic()&&purchases.get(i).isElectronic()){return true;}
   x++;
 }
 
