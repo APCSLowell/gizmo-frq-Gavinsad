@@ -28,7 +28,7 @@ if(purchases.get(i).getMaker().equals(maker)&&purchases.get(i).isElectronic()){x
     int x=0;
     for(int i=1;i<purchases.size();i++){
 if(purchases.get(x).getMaker().equals(purchases.get(i).getMaker())){
-if(purchases.get(x).isElectronic()&&purchases.get(i).isElectronic()){return true;}
+if(purchases.get(x).isElectronic()==purchases.get(i).isElectronic()){return true;}
   x++;
 }
 
